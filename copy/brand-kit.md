@@ -177,3 +177,19 @@ used.)
 - No glass effect on every card.
 - No dark theme or dark sections; the darkest block is a single ink CTA band.
 - No real third-party brands or logos.
+- No faded "ghost" of the 3D product showing through text sections (stage dims to 94% behind content).
+- No hotspot labels running off the screen edge (labels flip to the left near the right edge).
+- No cartoon-opaque serum drops: drops are clear, glassy, small.
+
+## 18. Experience
+**Option A, real 3D product, built in code.** No Higgsfield or other paid
+generator: the Blue PDRN Face Serum bottle is modelled procedurally in
+three.js (`website/src/bottle.js`): cobalt glass, white C-ring print, ribbed
+silver collar, tall silver cap. The scene is high-key: a CSS sky gradient
+behind a transparent WebGL canvas, a still-water floor with slow ripples,
+clear serum drops hanging in the air, rising dew, a cobalt rim and an
+apricot rim light. The five beats from section 15 are camera keyframes in
+`website/src/main.js`. Explore offers three light modes: Morning sky, Clear
+water, Golden hour. The poster (`website/public/img/hero.jpg`) is rendered
+from beat 1 of the scene itself. Lower sections use the brand's own photos,
+cropped from the current site.
